@@ -1,0 +1,23 @@
+{
+  "name": "jen_larissa_photography_v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "author": "josh",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "mocha": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "hbs": "^4.0.1"
+  }
+}
