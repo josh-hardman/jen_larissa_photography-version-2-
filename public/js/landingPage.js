@@ -5,14 +5,12 @@ $(document).ready(function(){
 
   window.setTimeout(function(){
     $('.button-container').addClass('visible');
-  },2000);
+  },3500);
 });
 
 var performAnimation = function(){
   $('.js-background').addClass('hidden');
   $('.item').addClass('moveRight');
-
-
 }
 
 var imgLoaded = false;
@@ -29,4 +27,4 @@ window.setTimeout(function(){
       performAnimation();
     });
   }
-},3000);
+},2500);
