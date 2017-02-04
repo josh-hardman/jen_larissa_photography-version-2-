@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: rgb(30,30,30);
+  background: url(/img/blur_landing_background.jpg) no-repeat 55% 0%;
 }
 
 .full-frame-container {
@@ -53,6 +53,7 @@ body{
   width: 90%;
   margin: 0 auto;
   display: block;
+  opacity: 0;
 }
 
 .btn-lg{
