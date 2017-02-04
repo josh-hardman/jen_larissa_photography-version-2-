@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html class"background-img">
-  <head>
-    <meta charset="utf-8">
-    <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="/js/jquery-3.1.1.min.js"></script>
-  </head>
+  {{> _head}}
   <body>
-    <div class="full-frame-container">
-        <div class="sharp_background"></div>
-    </div>
-    <div class="js-background full-frame-container">
-        <div class="blur_background"></div>
-    </div>
-    <div class="full-frame-container">
-      <div class="container">
-        <div class="item">
-          <img class="name-plaque" src="/img/plaque.png" alt="">
-          <div class="button-container">
-            <a class="btn-lg center" style="transform: translate(10px)" href="/portfolio">
-              ENTER WEBSITE
-            </a>
+    <div id="barba-wrapper">
+        <div class="barba-container">
+        <div class="full-frame-container">
+            <div class="sharp_background"></div>
+        </div>
+        <div class="js-background full-frame-container">
+            <div class="blur_background"></div>
+        </div>
+        <div class="full-frame-container">
+          <div class="container">
+            <div class="item">
+              <img class="name-plaque" src="/img/plaque.png" alt="">
+              <div class="button-container">
+                <a class="btn-lg center" title="Portfolio" style="transform: translate(10px)" href="/portfolio">
+                  ENTER WEBSITE
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        <img src="/img/landing_background.jpg" alt="Book" id="bg" style="display:none;"/>
       </div>
     </div>
-    <img src="/img/landing_background.jpg" alt="Book" id="bg" style="display:none;"/>
 
 
     <script src="/js/landingPage.js"></script>

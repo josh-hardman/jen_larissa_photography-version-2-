@@ -1,7 +1,39 @@
-{{> _htmlOpening}}
+<!DOCTYPE html>
+<html class"background-img">
+  {{> _head}}
+  <body>
+    <div id="barba-wrapper">
+      <div class="barba-container">
 
-  {{> _header}}
-  <p>Portfolio goes here</p>
-  {{> _footer}}
+        <div class="container background parallax" style="background-image:url('/img/engagements_cover.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                    <h1>ENGAGEMENTS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container background parallax" style="background-image:url('/img/bridals_cover.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                    <h1>BRIDALS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container background parallax" style="background-image:url('/img/weddings_cover.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+            <div class="content-a">
+                <div class="content-b">
+                    <h1>WEDDINGS</h1>
+                </div>
+            </div>
+        </div>
 
-{{> _htmlClosing}}
+        <!-- <div class="container engagements_cover.jpg"></div>
+        <div class="container bridals_cover.jpg"></div>
+        <div class="container weddings_cover.jpg"></div>
+        <img src="/img/landing_background.jpg" alt="Book" id="bg" style="display:none;"/> -->
+      </div>
+    </div>
+    <script src="/js/landingPage.js"></script>
+    <script src="/js/parallax.js"></script>
+  </body>
+</html>

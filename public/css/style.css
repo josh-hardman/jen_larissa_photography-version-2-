@@ -1,6 +1,7 @@
 body{
   margin: 0;
-  background: url(/img/blur_landing_background.jpg) no-repeat 55% 0%;
+  /*background: url(/img/blur_landing_background.jpg) no-repeat 55% 0%;*/
+  background-color: rgb(50,50,50);
 }
 
 .full-frame-container {
@@ -91,4 +92,27 @@ body{
     100% {
         width: 50%;
     }
+}
+
+
+
+
+
+/* Portfolio*/
+.engagements_cover {
+  background: url(/img/engagements_cover.jpg) no-repeat 50% 45%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+.bridals_cover {
+  background: url(/img/bridals_cover.jpg) no-repeat 50% 0%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+.weddings_cover {
+  background: url(/img/weddings_cover.jpg) no-repeat 55% 0%;
+  min-height: 100%;
+  background-size: cover;
 }
