@@ -2,15 +2,17 @@ $(document).ready(function(){
   window.setTimeout(function(){
     $('.name-plaque').addClass('visible');
   },700);
+
+  window.setTimeout(function(){
+    $('.button-container').addClass('visible');
+  },2000);
 });
 
 var performAnimation = function(){
   $('.js-background').addClass('hidden');
   $('.item').addClass('moveRight');
 
-  window.setTimeout(function(){
-    $('.button-container').addClass('visible');
-  },2000);
+
 }
 
 var imgLoaded = false;
