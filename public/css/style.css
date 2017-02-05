@@ -116,3 +116,32 @@ body{
   min-height: 100%;
   background-size: cover;
 }
+
+h1{
+  font-size: 10vw;
+  font-weight: 100;
+}
+
+
+
+/*Page Transitions*/
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
