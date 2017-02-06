@@ -161,8 +161,9 @@ h1{
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 50px;
   pointer-events: none;
+  bottom: 5px;
+  color: white;
 }
 
 .rot90 {
@@ -173,13 +174,14 @@ h1{
   transform: rotate(90deg) !important;
 }
 
-.scrollAnchor {
+.scroll-anchor {
 	padding-top: 70px;
   width: 100px;
   margin: 0 auto;
+  position: relative;
 }
 
-.scrollAnchor span {
+.scroll-anchor span {
 	position: absolute;
 	top: 13px;
 	left: 50%;
@@ -195,7 +197,7 @@ h1{
 	box-sizing: border-box;
 }
 
-.scrollAnchor .upArrow {
+.scroll-anchor .upArrow {
   -webkit-animation: sdbUp 1.5s infinite;
 	animation: sdbUp 1.5s infinite;
 }
