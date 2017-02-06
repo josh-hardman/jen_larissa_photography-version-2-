@@ -143,12 +143,12 @@ h1{
 
 /*Scroll Button*/
 
-.button-container {
+.scroll-container {
   position: absolute;
   bottom: 0px;
   height: 110px;
-  /*background-color: red;*/
-  opacity: 1;
+  display: flex;
+  width: 100%;
 }
 
 .up {
@@ -173,12 +173,13 @@ h1{
   transform: rotate(90deg) !important;
 }
 
-a {
+.scrollAnchor {
 	padding-top: 70px;
   width: 100px;
   margin: 0 auto;
 }
-a span {
+
+.scrollAnchor span {
 	position: absolute;
 	top: 13px;
 	left: 50%;
@@ -194,7 +195,7 @@ a span {
 	box-sizing: border-box;
 }
 
-.upArrow {
+.scrollAnchor .upArrow {
   -webkit-animation: sdbUp 1.5s infinite;
 	animation: sdbUp 1.5s infinite;
 }
