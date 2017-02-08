@@ -301,3 +301,22 @@ h1{
 		opacity: 0;
 	}
 }
+
+.side-bar-nav{
+  position: fixed;
+    z-index: 52;
+    top: 50%;
+    right: 15px;
+    padding: 0 10px 0 0;
+}
+
+.side-bar-nav .link {
+  margin-top: 2px;
+}
+
+.side-bar-nav .btn-round {
+  border: 3px solid white;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
