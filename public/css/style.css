@@ -353,3 +353,7 @@ h1{
   visibility: visible;
   transform: translateX(0px);
 }
+
+.side-bar-nav .selected {
+  background-color: white;
+}
