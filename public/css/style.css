@@ -375,6 +375,19 @@ h1{
     /*border: 2px solid green;*/
 }
 
+.menu-S-logo {
+  /*border: 2px solid blue;*/
+  position: absolute;
+  left: 0;
+  float: left;
+  padding-left: 20px;
+}
+
+.logo-B {
+  width: 30%;
+  height: 30%;
+}
+
 .menu-S-nav {
   position: absolute;
   right: 0;
