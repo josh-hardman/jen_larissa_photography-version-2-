@@ -386,6 +386,7 @@ h1{
 .logo-B {
   width: 30%;
   height: 30%;
+  visibility: hidden;
 }
 
 .menu-S-nav {
@@ -411,4 +412,10 @@ h1{
 
 .navlink-B:hover {
   color: rgba(0,0,0,1);
+}
+
+@media (min-width:840px){
+  .logo-B {
+    visibility: visible;
+  }
 }
