@@ -50,6 +50,34 @@ app.get('/portfolio', (req, res) => {
     });
 });
 
+app.get('/portfolio/:category', (req, res) => {
+    const getCategory = req.params.category.toLowerCase()
+    const categories = [
+      {
+        "title": "Engagements",
+        background: "/img/engagements_cover.jpg"
+      },
+      {
+        title: "Bridals",
+        background: "/img/bridals_cover.jpg"
+      },
+      {
+        title: "Weddings",
+        background: "/img/weddings_cover.jpg"
+      },
+      {
+        title: "Portraits",
+        background: "/img/portraits_cover.jpg"
+      }
+    ]
+
+    const category = categories.filter( category => category.title.toLowerCase() === getCategory )[0]
+
+    res.render('portfolioCategory.hbs', {
+      category: category
+    });
+});
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
