@@ -58,19 +58,24 @@ app.get('/portfolio/:category', (req, res) => {
         background: "/img/engagements_cover.jpg",
         images: [
           {
-            url: "/img/engagements_cover.jpg",
-            title: 'Engagements Picture',
-            description: 'Some awesome description'
+            url: "/img/about.jpg",
+            title: 'About Picture',
+            description: 'This is me'
           },
           {
             url: "/img/engagements_cover.jpg",
             title: 'Engagements Picture',
-            description: 'Some awesome description'
+            description: 'You should really check this one out'
           },
           {
             url: "/img/engagements_cover.jpg",
             title: 'Engagements Picture',
-            description: 'Some awesome description'
+            description: 'This one is my favorite'
+          },
+          {
+            url: "/img/engagements_cover.jpg",
+            title: 'Engagements Picture',
+            description: 'This one is my favorite'
           }
         ]
       },
