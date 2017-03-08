@@ -4,6 +4,12 @@ body{
   background-color: rgb(50,50,50);
 }
 
+a {
+  color: inherit;
+}
+
+img {max-width:100%;}
+
 .full-frame-container {
     position:absolute;
     height: 100vh;
@@ -418,4 +424,76 @@ h1{
   .logo-B {
     visibility: visible;
   }
+}
+
+.details-container {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.photo-container {
+  display: flex;
+  /*background-color: rgba(200,200,200,.3);*/
+  justify-content: space-between;
+}
+
+.photo {
+  flex: 1;
+  height: 260px;
+  /*border: 1px solid blue;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-inner {
+  /*background-color: rgba(50,50,50,.4);*/
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-overlay {
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo:hover .photo-overlay {
+  background-color: rgba(250,250,250,.6);
+  visibility: visible;
+  cursor: pointer;
+}
+
+.photo-overlay__title {
+  flex:1;
+  color: black;
+}
+
+.photo-overlay__description {
+  flex:2;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  background-color: #F4F4F4;
+  margin-top: 70px;
 }

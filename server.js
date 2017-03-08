@@ -55,19 +55,87 @@ app.get('/portfolio/:category', (req, res) => {
     const categories = [
       {
         "title": "Engagements",
-        background: "/img/engagements_cover.jpg"
+        background: "/img/engagements_cover.jpg",
+        images: [
+          {
+            url: "/img/engagements_cover.jpg",
+            title: 'Engagements Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/engagements_cover.jpg",
+            title: 'Engagements Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/engagements_cover.jpg",
+            title: 'Engagements Picture',
+            description: 'Some awesome description'
+          }
+        ]
       },
       {
-        title: "Bridals",
-        background: "/img/bridals_cover.jpg"
+        "title": "Bridals",
+        background: "/img/bridals_cover.jpg",
+        images: [
+          {
+            url: "/img/bridals_cover.jpg",
+            title: 'Bridals Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/bridals_cover.jpg",
+            title: 'Bridals Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/bridals_cover.jpg",
+            title: 'Bridals Picture',
+            description: 'Some awesome description'
+          }
+        ]
       },
       {
-        title: "Weddings",
-        background: "/img/weddings_cover.jpg"
+        "title": "Weddings",
+        background: "/img/weddings_cover.jpg",
+        images: [
+          {
+            url: "/img/weddings_cover.jpg",
+            title: 'Weddings Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/weddings_cover.jpg",
+            title: 'Weddings Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/weddings_cover.jpg",
+            title: 'Weddings Picture',
+            description: 'Some awesome description'
+          }
+        ]
       },
       {
-        title: "Portraits",
-        background: "/img/portraits_cover.jpg"
+        "title": "Portraits",
+        background: "/img/portraits_cover.jpg",
+        images: [
+          {
+            url: "/img/portraits_cover.jpg",
+            title: 'Portraits Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/portraits_cover.jpg",
+            title: 'Portraits Picture',
+            description: 'Some awesome description'
+          },
+          {
+            url: "/img/portraits_cover.jpg",
+            title: 'Portraits Picture',
+            description: 'Some awesome description'
+          }
+        ]
       }
     ]
 
