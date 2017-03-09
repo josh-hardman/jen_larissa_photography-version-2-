@@ -22,7 +22,20 @@
               </div>
           </div>
       </div>
-      <section class="photo-container" style="margin-top:70px;">
+      <div class="gallery">
+        {{#each category.images}}
+          <a class="image">
+            <figure class="photo-inner">
+              <img src="{{this.url}}" alt="">
+              <div class="photo-overlay">
+                <h3 class="photo-overlay__title">{{this.title}}</h3>
+                <p class="photo-overlay__description">{{this.description}}</p>
+              </div>
+            </figure>
+          </a>
+        {{/each}}
+      </div>
+      <!-- <section class="photo-container" style="margin-top:70px;">
         {{#each category.images}}
           <div class="photo">
             <div class="photo-inner">
@@ -34,7 +47,7 @@
             </div>
           </div>
         {{/each}}
-      </section>
+      </section> -->
       {{>_footer}}
     <script src="/js/parallax.js"></script>
   </body>

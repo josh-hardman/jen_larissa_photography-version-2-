@@ -54,11 +54,11 @@ app.get('/portfolio/:category', (req, res) => {
     const getCategory = req.params.category.toLowerCase()
     const categories = [
       {
-        "title": "Engagements",
+        title: "Engagements",
         background: "/img/engagements_cover.jpg",
         images: [
           {
-            url: "/img/about.jpg",
+            url: "/img/engagements_cover.jpg",
             title: 'About Picture',
             description: 'This is me'
           },
@@ -80,7 +80,7 @@ app.get('/portfolio/:category', (req, res) => {
         ]
       },
       {
-        "title": "Bridals",
+        title: "Bridals",
         background: "/img/bridals_cover.jpg",
         images: [
           {
@@ -101,7 +101,7 @@ app.get('/portfolio/:category', (req, res) => {
         ]
       },
       {
-        "title": "Weddings",
+        title: "Weddings",
         background: "/img/weddings_cover.jpg",
         images: [
           {
@@ -122,7 +122,7 @@ app.get('/portfolio/:category', (req, res) => {
         ]
       },
       {
-        "title": "Portraits",
+        title: "Portraits",
         background: "/img/portraits_cover.jpg",
         images: [
           {

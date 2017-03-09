@@ -442,26 +442,13 @@ h1{
   overflow: hidden;
 }
 
-.photo {
-  float: left;
-  width: 33.333%;
-  /*border: 1px solid blue;*/
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
 .photo-inner {
-  /*background-color: rgba(50,50,50,.4);*/
-  width: 98%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
+  padding: 5px;
 }
 
 .photo-overlay {
@@ -475,7 +462,7 @@ h1{
   transition: all .6s;
 }
 
-.photo:hover .photo-overlay {
+.image:hover .photo-overlay {
   background-color: rgba(250,250,250,.6);
   opacity: 1;
   cursor: pointer;
@@ -489,6 +476,8 @@ h1{
 .photo-overlay__description {
   flex:2;
   color: black;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .footer {
@@ -498,4 +487,103 @@ h1{
   height: 180px;
   background-color: #F4F4F4;
   margin-top: 70px;
+}
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+/*.image {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+}*/
+
+.image {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(100%);
+  text-decoration: none;
+  color: black;
+}
+
+.image:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 35em) {
+  .image {
+    width: calc(50%);
+  }
+/*
+  .photo:nth-of-type(2n+1) {
+    padding: 40px;
+  }*/
+}
+
+@media screen and (min-width: 55em) {
+  .image {
+    width: calc(33.333%);
+  }
+}
+/*
+@media screen and (min-width: 50em) {
+  .image {
+    width: calc(25% - 6px);
+  }
+
+  .image:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+
+  .image:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}*/
+
+.image:hover img {
+  transform: scale(1.015);
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.p .image {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
 }
